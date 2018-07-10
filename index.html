@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Jobs-Github jobs</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
+  <div class="header">
+    <div class="bg-color">
+      <header id="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#lauraMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Github Jobs</a>
+            </div>
+            <div class="collapse navbar-collapse" id="lauraMenu">
+              <ul class="nav navbar-nav navbar-right navbar-border">
+                <li class="active"><a href="#main-header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonial">Find Jobs</a></li>
+                <li><a href="#contact">Contact </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wow fadeIn delay-05s">
+              <div class="banner-text">
+                <h2>Hi, Welcome <span> to</span> this website</h2>
+                <p>Find jobs in Github<br>& Get hired</p>
+              </div>
+              <div class="overlay-detail text-center">
+                <a href="#about"><i class="fa fa-angle-down"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="about" class="section-padding wow fadeIn delay-05s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h2 class="title-text">
+            This website will help you to find<br><span class="deco"> Github jobs,</span>  across the globe.
+          </h2>
+        </div>
+        <div class="col-md-6 text-left">
+          <div class="about-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>&nbsp;</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>&nbsp;</p>
+            <ul class="abt-list">
+              <li>- Enetr valid location.</li>
+              <li>- Enter your Job description.</li>
+              <li>- Get your recommended job.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="testimonial" class="section-padding wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <h2 class="title text-center">Find Jobs <span class="deco">in</span> Github </h2>
+        <div class="test-sec">
+          <div class="col-sm-3 col-sm-offset-3">
+            <blockquote>
+             <form>
+                <input type="text" name="name" placeholder="Job Location" id="location" required/>
+                </form>
+            </blockquote>
+            
+          </div>
+          <div class="col-sm-6 col-sm-offset-0">
+            <blockquote>
+              <form>
+                <input type="text" name="name" placeholder="Job Description" id="=description" required/>
+                </form>
+            </blockquote>
+
+          </div>
+            <div class="mybtn" >
+                <button id="button1" onclick="findyourjob();">Find Jobs</button>
+            </div>
+            <div id="message">
+
+            </div>
+            <div class="result" id="result">
+              <h2 class="text-center" style="color:grey">Enter valid location, job description and click on Find Jobs button to get your result.</h2>            
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section-padding wow fadeIn delay-05s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-sec text-center">
+            <h2><span class="deco"> Any</span> Feedback?</h2>
+            <p>If you have any problem or any query related to this website, leave us a messge </p>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-md-push-2">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
