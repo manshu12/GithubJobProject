@@ -66,9 +66,11 @@
         </div>
         <div class="col-md-6 text-left">
           <div class="about-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers.</p>
             <p>&nbsp;</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>So, what you nee to do is, just enter the location in which you want yor dream job and the job profile you want to work or in which you are epert in. Next you just have to hit the Find Job button and there you go!
+
+            </p>
             <p>&nbsp;</p>
             <ul class="abt-list">
               <li>- Enter valid location.</li>
@@ -86,8 +88,9 @@
       <div class="row">
         <h2 class="title text-center">Find Jobs <span class="deco">in</span> Github </h2>
         <div class="test-sec">
-          <div class="col-sm-3 col-sm-offset-3">
-            <blockquote>
+          <!-- <div class="col-sm-3 col-sm-offset-3"> -->
+
+            <!-- <blockquote> 
              <form>
                 <input type="text" name="name" placeholder="Job Location" id="location" required/>
                 </form>
@@ -97,11 +100,14 @@
           <div class="col-sm-6 col-sm-offset-0">
             <blockquote>
               <form>
-                <input type="text" name="name" placeholder="Job Description" id="=description" required/>
+                <input type="text" placeholder="job description" id="desc" required/>
                 </form>
-            </blockquote>
+            </blockquote> -->
 
-          </div>
+          <!-- </div> -->
+          <input type="text" placeholder = "location" id="location" required/>
+          <input type="text" placeholder = "Description" id="description" required/>
+          
             <div class="mybtn" >
                 <button id="button1" onclick="findyourjob();">Find Jobs</button>
             </div>
@@ -113,6 +119,12 @@
           
       </div>
     </div>
+    <div id="message">
+
+    </div>
+    <div class="result" id="result">
+             
+  </div>
 
   </section>
   <section id="contact" class="section-padding wow fadeIn delay-05s">
@@ -153,12 +165,7 @@
       </div>
     </div>
   </section>
-  <div id="message">
-
-  </div>
-  <div class="result" id="result">
-           
-</div>
+  
   
 
   <script src="js/jquery.min.js"></script>
@@ -166,7 +173,7 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- <script src="js/jquery.bxslider.min.js"></script> -->
   <script src="js/wow.js"></script>
-  <script src="js/custom.js"></script>
+   <script src="js/custom.js"></script> 
   <script src="contactform/contactform.js"></script>
   <script src="js/scripts.js"></script>
 
