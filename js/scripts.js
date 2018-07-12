@@ -3,7 +3,7 @@ var descriptionSearch = " ";
 
 function findyourjob(){
     let location = document.querySelector("#location").value;
-    let description = document.querySelector("description").value;
+    let description = document.querySelector("#description").value;
     locationSearch = location;
     descriptionSearch = description;
 
@@ -16,7 +16,7 @@ function findyourjob(){
         alert("Please enter job description");
     }
     else{
-        var queryURL = `https://localhost:3000/${location}/${description}`
+        var queryURL = `http://127.0.0.1:3000/${location}/${description}`
         fetch(queryURL)
         .then(function (response) {
             //return response;
