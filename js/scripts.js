@@ -86,3 +86,6 @@ function displayLocationResult(result) {
         console.log(result);
     }
 }
+function message(){
+    alert("Thank you for your feedback! Your message is sent");
+}
