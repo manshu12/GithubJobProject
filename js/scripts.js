@@ -87,5 +87,6 @@ function displayLocationResult(result) {
     }
 }
 function message(){
-    alert("Thank you for your feedback! Your message is sent");
+    var a = document.getElementById("#mybutton");
+    a.alert("Thank you for your feedback! Your message is sent");
 }
